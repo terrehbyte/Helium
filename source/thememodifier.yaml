@@ -5,6 +5,7 @@ Constants:
     - DetailsViewShowInfoPanelDefault: 'Show information panel by default'
     - DetailsViewBackgroundVerticalAlignment: 'Vertical alignment of the background image'
     - DetailsViewBackgroundHorizontalAlignment: 'Horizontal alignment of the background image'
+    - DetailsViewBackgroundMaxWidth: 'Maximum width of the background image (vertical always matches background height)'
     - DetailsViewAllowUseOfLogos: 'Allow use of logos (Requires Extra Metadata Loader extension)'
     - DetailsViewShowHltbDataGrid: 'Show HowLongToBeat data grid'
     - DetailsViewLibraryGameShowFavorite: 'Show favorites icon in game list'
