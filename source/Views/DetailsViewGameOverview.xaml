@@ -80,6 +80,16 @@
                                             </Style>
                                         </Grid.Style>
                                     </Grid>
+                                    <FadeImage x:Name="PART_ImageBackgroundBlurred" Source="{Binding Game.BackgroundImage}" Stretch="UniformToFill" BlurAmount="50" IsBlurEnabled="True">
+                                        <FadeImage.OpacityMask>
+                                            <LinearGradientBrush StartPoint="0.0, 0.0" EndPoint="1.0, 1.0">
+                                                <GradientStop Color="Transparent" Offset="0.0"/>
+                                                <GradientStop Color="Black" Offset="0.3"/>
+                                                <GradientStop Color="Black" Offset="0.6"/>
+                                                <GradientStop Color="Transparent" Offset="1.0"/>
+                                            </LinearGradientBrush>
+                                        </FadeImage.OpacityMask>
+                                    </FadeImage>
                                     <Border>
                                         <Border.Style>
                                             <Style TargetType="{x:Type Border}">
@@ -95,7 +105,7 @@
                                                 </Style.Triggers>
                                             </Style>
                                         </Border.Style>
-                                        <FadeImage x:Name="PART_ImageBackground" Stretch="UniformToFill"
+                                        <FadeImage x:Name="PART_ImageBackground" Stretch="Uniform"
                                                    HorizontalAlignment="{DynamicResource DetailsViewBackgroundHorizontalAlignment}"
                                                    VerticalAlignment="{DynamicResource DetailsViewBackgroundVerticalAlignment}">
                                             <FadeImage.OpacityMask>
@@ -106,6 +116,7 @@
                                             </FadeImage.OpacityMask>
                                         </FadeImage>
                                     </Border>
+
 
                                     <!-- BackgroundChanger plugin background -->
                                     <ContentControl x:Name="BackgroundChanger_PluginBackgroundImage"
