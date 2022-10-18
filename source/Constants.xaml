@@ -4,13 +4,13 @@
                     xmlns:popt="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options">
 
     <!--region ThemeModifier variables-->
-    <sys:Double x:Key="DetailsViewDescriptionWidth">300</sys:Double>
-    <sys:Boolean x:Key="DetailsViewDescriptionDockToRight">false</sys:Boolean>
     <sys:Boolean x:Key="DetailsViewShowInfoPanelDefault">true</sys:Boolean>
     <VerticalAlignment x:Key="DetailsViewBackgroundVerticalAlignment">Center</VerticalAlignment>
     <HorizontalAlignment x:Key="DetailsViewBackgroundHorizontalAlignment">Center</HorizontalAlignment>
     <sys:Double x:Key="DetailsViewBackgroundMaxWidth">10000</sys:Double>
     <sys:Boolean x:Key="DetailsViewAllowUseOfLogos">true</sys:Boolean>
+    <sys:Double x:Key="DetailsViewQuickInfoWidth">260</sys:Double>
+    <sys:Double x:Key="DetailsViewQuickInfoListItemWidth">150</sys:Double>
     <sys:Boolean x:Key="DetailsViewShowHltbDataGrid">true</sys:Boolean>
     <sys:Boolean x:Key="GridViewAllowUseOfLogos">true</sys:Boolean>
     <sys:Boolean x:Key="GridViewShowHltbDataGrid">true</sys:Boolean>

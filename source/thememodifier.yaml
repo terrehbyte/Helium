@@ -1,8 +1,8 @@
 Constants:
     - "Details View"
-    - DetailsViewDescriptionWidth(150,1200): 'Width of description'
-    - DetailsViewDescriptionDockToRight: 'Dock description to the right'
     - DetailsViewShowInfoPanelDefault: 'Show information panel by default'
+    - DetailsViewQuickInfoWidth(150,500): 'Width of the quick info panel by the description'
+    - DetailsViewQuickInfoListItemWidth(150, 350): 'Width of the lists in the quick info panel by the description'
     - DetailsViewBackgroundVerticalAlignment: 'Vertical alignment of the background image'
     - DetailsViewBackgroundHorizontalAlignment: 'Horizontal alignment of the background image'
     - DetailsViewBackgroundMaxWidth: 'Maximum width of the background image (vertical always matches background height)'
