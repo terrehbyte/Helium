@@ -694,41 +694,6 @@
                                                     </Grid>
                                                 </StackPanel>
 
-                                                <StackPanel Name="PART_ElemTags">
-                                                    <StackPanel.Style>
-                                                        <Style TargetType="StackPanel">
-                                                            <Setter Property="Visibility" Value="Visible" />
-                                                            <Style.Triggers>
-                                                                <DataTrigger Binding="{Settings DetailsVisibility.Tags}" Value="False">
-                                                                    <Setter Property="Visibility" Value="Collapsed" />
-                                                                </DataTrigger>
-                                                                <DataTrigger Binding="{Binding Game.Tags}" Value="{x:Null}">
-                                                                    <Setter Property="Visibility" Value="Collapsed" />
-                                                                </DataTrigger>
-                                                            </Style.Triggers>
-                                                        </Style>
-                                                    </StackPanel.Style>
-                                                    <Label Content="{DynamicResource LOCTagsLabel}" Style="{DynamicResource FeedSectionLabel}" />
-                                                    <Grid Margin="0,0,0,10" MinHeight="45">
-                                                        <Border Style="{DynamicResource OutlineBorderSidePanelsBorder}" />
-                                                        <Border Style="{DynamicResource OutlineBorder}" />
-                                                        <ItemsControl ItemsSource="{Binding Game.Tags}" Margin="0,3,0,3">
-                                                            <ItemsControl.ItemsPanel>
-                                                                <ItemsPanelTemplate>
-                                                                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center"/>
-                                                                </ItemsPanelTemplate>
-                                                            </ItemsControl.ItemsPanel>
-                                                            <ItemsControl.ItemTemplate>
-                                                                <DataTemplate>
-                                                                    <Button Content="{Binding Name}" Style="{StaticResource PropertyItemFeedPanelButton}"
-                                                                        Command="{Binding RelativeSource={RelativeSource AncestorType=Grid}, Path=DataContext.SetTagFilterCommand}"
-                                                                        CommandParameter="{Binding}"/>
-                                                                </DataTemplate>
-                                                            </ItemsControl.ItemTemplate>
-                                                        </ItemsControl>
-                                                    </Grid>
-                                                </StackPanel>
-
                                                 <StackPanel Name="GameActivityFeed" Style="{DynamicResource PluginStackpanelVisibility}"
                                                         Tag="{PluginSettings Plugin=GameActivity, Path=HasData, FallbackValue=False}">
                                                     <Label Content="{DynamicResource LOCGameActivityTitle}" Style="{DynamicResource FeedSectionLabel}" />
@@ -850,6 +815,41 @@
                                                         </StackPanel>
                                                     </Grid>
                                                     
+                                                </StackPanel>
+
+                                                <StackPanel Name="PART_ElemTags">
+                                                    <StackPanel.Style>
+                                                        <Style TargetType="StackPanel">
+                                                            <Setter Property="Visibility" Value="Visible" />
+                                                            <Style.Triggers>
+                                                                <DataTrigger Binding="{Settings DetailsVisibility.Tags}" Value="False">
+                                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                                </DataTrigger>
+                                                                <DataTrigger Binding="{Binding Game.Tags}" Value="{x:Null}">
+                                                                    <Setter Property="Visibility" Value="Collapsed" />
+                                                                </DataTrigger>
+                                                            </Style.Triggers>
+                                                        </Style>
+                                                    </StackPanel.Style>
+                                                    <Label Content="{DynamicResource LOCTagsLabel}" Style="{DynamicResource FeedSectionLabel}" />
+                                                    <Grid Margin="0,0,0,10" MinHeight="45">
+                                                        <Border Style="{DynamicResource OutlineBorderSidePanelsBorder}" />
+                                                        <Border Style="{DynamicResource OutlineBorder}" />
+                                                        <ItemsControl ItemsSource="{Binding Game.Tags}" Margin="0,3,0,3">
+                                                            <ItemsControl.ItemsPanel>
+                                                                <ItemsPanelTemplate>
+                                                                    <WrapPanel Orientation="Horizontal" VerticalAlignment="Center"/>
+                                                                </ItemsPanelTemplate>
+                                                            </ItemsControl.ItemsPanel>
+                                                            <ItemsControl.ItemTemplate>
+                                                                <DataTemplate>
+                                                                    <Button Content="{Binding Name}" Style="{StaticResource PropertyItemFeedPanelButton}"
+                                                                        Command="{Binding RelativeSource={RelativeSource AncestorType=Grid}, Path=DataContext.SetTagFilterCommand}"
+                                                                        CommandParameter="{Binding}"/>
+                                                                </DataTemplate>
+                                                            </ItemsControl.ItemTemplate>
+                                                        </ItemsControl>
+                                                    </Grid>
                                                 </StackPanel>
 
                                                 <StackPanel Name="HltbPanel" Margin="0,0,0,15">
